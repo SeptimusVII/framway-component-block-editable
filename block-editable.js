@@ -28,7 +28,7 @@ module.exports = function(app){
         }
         if(!block.buttons['editConfirm']){
             block.buttons['editConfirm'] = {
-                $el : $('<button class="hidden btn-bg-green"><i class="fas fa-check"></i></button>'),
+                $el : $('<button class="hidden btn-bg-success"><i class="fas fa-check"></i></button>'),
                 onClick : function(){
                     block.$el.attr('contenteditable',false);
                     this.$el.addClass('hidden');
@@ -39,7 +39,7 @@ module.exports = function(app){
         }
         if(!block.buttons['editCancel']){
             block.buttons['editCancel'] = {
-                $el : $('<button class="hidden btn-bg-orange"><i class="fas fa-times"></i></button>'),
+                $el : $('<button class="hidden btn-bg-error"><i class="fas fa-times"></i></button>'),
                 onClick : function(){
                     block.$el.html(block.previousContent);
                     block.$el.attr('contenteditable',false);
