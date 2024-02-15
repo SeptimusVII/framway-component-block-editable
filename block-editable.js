@@ -2,8 +2,8 @@ module.exports = function(app){
     var BlockEditable = Object.getPrototypeOf(app).BlockEditable = new app.Component("block-editable");
     //BlockEditable.debug = true;
     BlockEditable.createdAt      = "2.0.0";
-    BlockEditable.lastUpdate     = "2.4.0";
-    BlockEditable.version        = "1.0.1";
+    BlockEditable.lastUpdate     = "2.4.5";
+    BlockEditable.version        = "1.0.2";
     // BlockEditable.factoryExclude = true;
     // BlockEditable.loadingMsg     = "This message will display in the console when component will be loaded.";
     // BlockEditable.requires       = [];
@@ -16,7 +16,7 @@ module.exports = function(app){
 
         if(!block.buttons['editStart']){
             block.buttons['editStart'] = {
-                $el : $('<button><i class="fas fa-pencil-alt"></i></button>'),
+                $el : $('<button class="btn"><i class="fas fa-pencil-alt"></i></button>'),
                 onClick : function(){
                     block.previousContent = block.$el.html();
                     block.$el.attr('contenteditable',true).focus();

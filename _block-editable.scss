@@ -3,6 +3,6 @@
   .block-editable__wrapper:hover &,
   .block-editable__wrapper.hover &{}
   &>button,
-  &>.btn{ padding: 0.2em; height: 35px; width: 35px; margin: 0 0.1em; font-size: 0.8em;}
+  &>%btn{ padding: 0.2em; height: 35px; width: 35px; margin: 0 0.1em; font-size: 0.8em;}
 }
 .block-editable{}
